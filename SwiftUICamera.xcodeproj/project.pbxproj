@@ -14,6 +14,7 @@
 		F99B401029F4262300A9E3B9 /* SwiftUICameraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B400F29F4262300A9E3B9 /* SwiftUICameraTests.swift */; };
 		F99B401A29F4262300A9E3B9 /* SwiftUICameraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B401929F4262300A9E3B9 /* SwiftUICameraUITests.swift */; };
 		F99B401C29F4262300A9E3B9 /* SwiftUICameraUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B401B29F4262300A9E3B9 /* SwiftUICameraUITestsLaunchTests.swift */; };
+		F9E84BBB29FC1F1000F9B79E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E84BBA29FC1F1000F9B79E /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,8 @@
 		F99B401529F4262300A9E3B9 /* SwiftUICameraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUICameraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F99B401929F4262300A9E3B9 /* SwiftUICameraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICameraUITests.swift; sourceTree = "<group>"; };
 		F99B401B29F4262300A9E3B9 /* SwiftUICameraUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICameraUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F9E84BBA29FC1F1000F9B79E /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		F9E84BBC29FC31F100F9B79E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,7 @@
 			children = (
 				F99B3FFD29F4262100A9E3B9 /* SwiftUICameraApp.swift */,
 				F99B3FFF29F4262100A9E3B9 /* ContentView.swift */,
+				F9E84BBA29FC1F1000F9B79E /* ImagePicker.swift */,
 				F99B400129F4262200A9E3B9 /* Assets.xcassets */,
 				F99B400329F4262200A9E3B9 /* SwiftUICamera.entitlements */,
 				F99B400429F4262200A9E3B9 /* Preview Content */,
@@ -115,6 +119,7 @@
 		F99B400E29F4262200A9E3B9 /* SwiftUICameraTests */ = {
 			isa = PBXGroup;
 			children = (
+				F9E84BBC29FC31F100F9B79E /* Info.plist */,
 				F99B400F29F4262300A9E3B9 /* SwiftUICameraTests.swift */,
 			);
 			path = SwiftUICameraTests;
@@ -259,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9E84BBB29FC1F1000F9B79E /* ImagePicker.swift in Sources */,
 				F99B400029F4262100A9E3B9 /* ContentView.swift in Sources */,
 				F99B3FFE29F4262100A9E3B9 /* SwiftUICameraApp.swift in Sources */,
 			);
@@ -347,6 +353,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = NO;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -417,6 +424,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUICamera/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires usage of camera to function property!";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -453,6 +461,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUICamera/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires usage of camera to function property!";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -486,6 +495,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUICameraTests/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires usage of camera to function property!";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
@@ -508,6 +519,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUICameraTests/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires usage of camera to function property!";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
